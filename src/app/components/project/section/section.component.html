@@ -1,0 +1,9 @@
+<div class="project-section">
+    <h2>{{ title }}</h2>
+    <p *ngIf="text">{{ text }}</p>
+    <ul *ngIf="list && list.length">
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+    <img *ngIf="img" [src]="img" alt="{{ title }}" class="project-image">
+</div>
+  

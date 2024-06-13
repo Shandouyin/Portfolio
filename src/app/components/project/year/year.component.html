@@ -1,0 +1,11 @@
+<div class="project-year-container">
+    <mat-grid-list cols="3" rowHeight="2.5:1">
+        <mat-grid-tile *ngFor="let project of projects">
+            <mat-card class="year-project-card" (click)="navigateToProject(project.id)">
+                <mat-card-header class="year-project-card-header">
+                    <mat-card-title>{{ project.title }}</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

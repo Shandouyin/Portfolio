@@ -1,0 +1,13 @@
+<div class="project-container">
+    <div class="project-card" *ngFor="let year of years" (click)="navigateTo(year.path)">
+        <mat-card>
+            <mat-card-header class="project-card-header">
+                <mat-card-title>{{ year.title }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="project-card-content">
+                <p>{{ year.description }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+  

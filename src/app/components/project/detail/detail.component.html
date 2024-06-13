@@ -1,0 +1,12 @@
+<div class="project-detail-container" *ngIf="project">
+    <h1>{{ project.title }}</h1>
+    <ng-container *ngFor="let detail of project.details; let i = index">
+        <mat-divider *ngIf="shouldShowDivider(i)" class="section-divider"></mat-divider>
+        <app-project-section *ngIf="detail.text || detail.list || detail.img"
+                            [title]="detail.title"
+                            [text]="detail.text"
+                            [list]="detail.list"
+                            [img]="detail.img"></app-project-section>
+    </ng-container>
+</div>
+  

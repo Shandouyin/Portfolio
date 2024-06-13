@@ -94,6 +94,15 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/Shandouyin/Portfolio.git",
+            "branch": "gh-pages",
+            "name": "Shandouyin",
+            "email": "shandouyin@gmail.com"
+          }
         }
       }
     }
